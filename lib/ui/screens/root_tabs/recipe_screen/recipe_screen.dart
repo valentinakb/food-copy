@@ -16,6 +16,7 @@ class RecipeScreen extends StatelessWidget {
       body: Padding(
         padding: paddingH16,
         child: ListView(
+          physics: const BouncingScrollPhysics(),
           children: [
             const SizedBox(height: 20),
             ...recipeShort
